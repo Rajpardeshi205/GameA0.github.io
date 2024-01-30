@@ -86,8 +86,8 @@ const showWinner = (winner) => {
     winnerImgElement.alt = 'Winner Image';
     winnerImgElement.classList.add('winner-image');
 
-    msg.innerHTML = 'Congratulations, Winner Is ';
-    msg.style.fontSize = "3.5rem"; // Set font size to 1rem
+    msg.innerHTML = 'Congratulations, <br> Winner Is ';
+    msg.style.fontSize = "2.5rem"; // Set font size to 1rem
     msg.appendChild(winnerImgElement);
 
     msgContainer.classList.remove('hide');
