@@ -1,0 +1,205 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /* background-image: url(tic-tac-toe.jpg);
+    background-size: cover; */
+    text-align: center;
+}
+
+main
+{
+    height: 100vmin;
+    background-image: url(tic-tac-toe.jpg);
+    background-size: cover;
+}
+
+h1
+{
+    color: black;
+    text-shadow: 0 0 10px red,
+                 0 0 10px red,
+                 0 0 20px red,
+                 0 0 10px red,
+                 0 0 10px red,
+                 0 0 10px red;
+    font-size: 5rem;
+    font-weight: 800;
+} 
+
+p
+{
+    color: black;
+    text-shadow: 0 0 10px red,
+                 0 0 10px red,
+                 0 0 20px red,
+                 0 0 10px red,
+                 0 0 10px red,
+                 0 0 10px red;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.container
+{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.game
+{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box
+{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1.45rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.9);
+    font-size: 8vmin;
+    background-color: rgba(248, 248, 255, 0.18);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+}
+
+#reset-game
+{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    box-shadow: 0 0 10px purple,
+                0 0 10px purple,
+                0 0 20px purple,
+                0 0 10px purple,
+                0 0 10px purple,
+                0 0 10px purple;
+    color: ghostwhite;
+    border-radius: 2rem;
+    border: none;
+}
+
+#new-game
+{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    box-shadow: 0 0 10px purple,
+                0 0 10px purple,
+                0 0 20px purple,
+                0 0 10px purple,
+                0 0 10px purple,
+                0 0 10px purple;
+    color: ghostwhite;
+    border-radius: 2rem;
+    border: none;
+}
+
+.msg
+{
+    color: #e71d36;
+    font-size: 5vmin;
+}
+
+.msg-container
+{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    background-image: url(tic-tac-toe.jpg);
+    background-size: cover;
+}
+
+.hide
+{
+    display: none;
+}
+
+.winner-image 
+{
+    display: flex;
+    padding-left: 13rem;
+    width: 300px;
+    height: 300px;
+}
+
+
+@media(width<700px)
+{
+    .msg-container
+    {
+        height: 223vmin;
+        background-image: url(2.jpg);
+        background-size: auto;
+    }
+
+    main
+    {
+        height: 223vmin;
+        background-image: url(2.jpg);
+        background-size: cover;
+    }
+
+    .game
+    {
+        height: 90vmin;
+        width: 90vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .box
+    {
+        height: 28vmin;
+        width: 28vmin;
+        border-radius: 1.45rem;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0,0,0,0.9);
+        font-size: 8vmin;
+        background-color: rgba(248, 248, 255, 0.18);
+        backdrop-filter: blur(10px);
+    }   
+
+    #reset-game
+    {
+        padding: 1rem;
+        font-size: 2.25rem;
+    }
+
+    #new-game
+    {
+        padding: 1rem;
+        font-size: 2.25rem;
+    }
+    
+    .winner-image {
+        width: 200px;
+        height: 200px;
+        padding-right: 10.5rem;
+    }
+
+    .msg {
+        font-size: 0.5vmin;
+    }
+
+}
